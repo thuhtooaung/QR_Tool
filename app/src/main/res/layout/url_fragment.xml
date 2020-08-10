@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.Url_fragment"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/url_qr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/url_prefix"
+        android:background="@drawable/edit_text_bg"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:inputType="textUri"
+        android:autofillHints="@string/url_prefix" />
+
+    <Button
+        android:id="@+id/url_qr_gen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/generate"
+        android:background="@drawable/gen_btn_bg"
+        android:layout_margin="10dp"
+        android:textAllCaps="false"/>
+
+    <ImageView
+        android:id="@+id/rs_img_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:contentDescription="@string/app_name" />
+
+    <ImageButton
+        android:id="@+id/url_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow_downward_black_24dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/round_img_btn_bg"
+        android:visibility="invisible"
+        android:contentDescription="@string/app_name"
+        android:layout_margin="10dp"/>
+
+</LinearLayout>

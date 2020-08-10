@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.Message_Fragment"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/msg_ph"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_phone_number"
+        android:background="@drawable/edit_text_bg"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:inputType="phone"
+        android:autofillHints="@string/enter_phone_number" />
+
+    <EditText
+        android:id="@+id/msg_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_msg"
+        android:background="@drawable/edit_text_bg"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:inputType="textMultiLine"
+        android:autofillHints="@string/enter_msg" />
+
+    <Button
+        android:id="@+id/msg_qr_gen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/generate"
+        android:background="@drawable/gen_btn_bg"
+        android:layout_margin="10dp"
+        android:textAllCaps="false"/>
+
+    <ImageView
+        android:id="@+id/rs_img_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:contentDescription="@string/app_name" />
+
+    <ImageButton
+        android:id="@+id/msg_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow_downward_black_24dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/round_img_btn_bg"
+        android:visibility="invisible"
+        android:contentDescription="@string/app_name"
+        android:layout_margin="10dp"/>
+
+</LinearLayout>

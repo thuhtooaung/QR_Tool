@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.Play_Store_Fragment"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/ps_link"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/play_store_prefix"
+        android:background="@drawable/edit_text_bg"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:autofillHints="@string/play_store_prefix"
+        android:hint="@string/play_store_prefix"
+        android:inputType="textUri" />
+
+    <Button
+        android:id="@+id/ps_qr_gen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/generate"
+        android:layout_margin="10dp"
+        android:background="@drawable/gen_btn_bg"
+        android:textAllCaps="false"/>
+
+    <ImageView
+        android:id="@+id/rs_img_8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:contentDescription="@string/app_name" />
+
+    <ImageButton
+        android:id="@+id/ps_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow_downward_black_24dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/round_img_btn_bg"
+        android:visibility="invisible"
+        android:contentDescription="@string/app_name"
+        android:layout_margin="10dp"/>
+
+</LinearLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.Contact_Fragment"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/ct_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/name"
+            android:background="@drawable/edit_text_bg"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:inputType="textPersonName"
+            android:autofillHints="@string/name" />
+
+        <EditText
+            android:id="@+id/ct_org"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/organization"
+            android:background="@drawable/edit_text_bg"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:inputType="textPersonName"
+            android:autofillHints="@string/organization" />
+
+        <EditText
+            android:id="@+id/ct_addr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/address"
+            android:background="@drawable/edit_text_bg"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:inputType="textPostalAddress"
+            android:autofillHints="@string/address" />
+
+        <EditText
+            android:id="@+id/ct_ph"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/phone"
+            android:background="@drawable/edit_text_bg"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:inputType="phone"
+            android:autofillHints="@string/phone" />
+
+        <EditText
+            android:id="@+id/ct_mail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email"
+            android:background="@drawable/edit_text_bg"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:inputType="textEmailAddress"
+            android:autofillHints="@string/email" />
+
+        <EditText
+            android:id="@+id/ct_note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/notes"
+            android:background="@drawable/edit_text_bg"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:inputType="textMultiLine"
+            android:autofillHints="" />
+
+        <Button
+            android:id="@+id/ct_qr_gen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/generate"
+            android:background="@drawable/gen_btn_bg"
+            android:layout_margin="10dp"
+            android:textAllCaps="false"/>
+
+        <ImageView
+            android:id="@+id/rs_img_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:contentDescription="@string/app_name" />
+        <ImageButton
+            android:id="@+id/ct_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_downward_black_24dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/round_img_btn_bg"
+            android:visibility="invisible"
+            android:contentDescription="@string/app_name"
+            android:layout_margin="10dp"/>
+    </LinearLayout>
+
+</ScrollView>
